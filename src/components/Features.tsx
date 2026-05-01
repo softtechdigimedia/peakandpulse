@@ -1,26 +1,26 @@
 import { motion } from 'motion/react';
-import { Laptop, Globe, Fingerprint, Tag } from 'lucide-react';
+import { Laptop, Globe, Fingerprint,  Zap } from 'lucide-react';
 
 const features = [
   {
-    title: "End Phishing & Takeover Fears",
-    icon: Laptop,
-    description: "When security requires a physical touch, your accounts become untouchable to remote hackers."
-  },
-  {
-    title: "Work Securely from Anywhere",
+    title: "Data-Driven SEO Strategies",
     icon: Globe,
-    description: "Carry enterprise-grade protection in your pocket, ensuring your data stays yours on any network."
+    description: "Rank higher and dominate search results with our predictive keyword modeling and technical optimizations."
   },
   {
-    title: "Reclaim Your Digital Sovereignty",
+    title: "High-Performance Paid Media",
+    icon: Zap,
+    description: "Scale spend efficiently across Meta, Google, and TikTok with machine-learning powered bidding strategies."
+  },
+  {
+    title: "Conversion-Led Design",
+    icon: Laptop,
+    description: "Beautifully crafted user experiences designed with a single goal: turning visitors into loyal customers."
+  },
+  {
+    title: "Content That Converts",
     icon: Fingerprint,
-    description: "Take back control: your identity is an asset, not a product. Secure it with local encryption."
-  },
-  {
-    title: "Declutter Your Digital Defenses",
-    icon: Tag,
-    description: "Replace a confusing maze of apps and passwords with a single, elegant physical interface."
+    description: "High-impact storytelling that resonates with your audience and builds lasting brand equity."
   }
 ];
 
@@ -36,7 +36,7 @@ export default function Features() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="text-white text-xl font-medium max-w-xs"
           >
-            Restoring Your <br /> Confidence Online
+            Dominating the <br /> Digital Landscape
           </motion.h3>
           <motion.h2 
             initial={{ opacity: 0, x: -100 }}
@@ -45,7 +45,7 @@ export default function Features() {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="text-white text-3xl md:text-5xl font-medium max-w-2xl leading-[1.1] tracking-tight"
           >
-            Feel the difference that tangible security makes in your everyday digital interactions
+            Experience the impact of precision-engineered marketing that speaks to your results
           </motion.h2>
         </div>
 

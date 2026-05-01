@@ -17,8 +17,17 @@
 
 
 .bg{
-  background-image: url('/public/logo.png');
+  background-image: url('/logo.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+
+.orbit-container {
+  perspective: 2000px;
+}
+
+.icon-3d {
+  transform-style: preserve-3d;
 }

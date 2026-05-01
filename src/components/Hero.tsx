@@ -1,20 +1,28 @@
 import { motion } from 'motion/react';
+import Beams from './Beams';
 
 export default function Hero() {
   return (
     <section className="relative h-screen min-h-[700px] w-full overflow-hidden bg-black" id="hero-section">
       {/* Background Image with dramatic lighting */}
+      <div style={{ width: '100%', height: '900px', position: 'relative' }}>
+  <Beams
+    beamWidth={3}
+    beamHeight={30}
+    beamNumber={20}
+    lightColor="#ffffff"
+    speed={2}
+    noiseIntensity={1.75}
+    scale={0.2}
+    rotation={30}
+  />
+</div>
       <div className="absolute inset-0 z-0">
-        <img 
-          src="https://images.unsplash.com/photo-1544198365-f5d60b6d8190?q=80&w=2070&auto=format&fit=crop" 
-          alt="Majestic mountain peak at sunset"
-          className="w-full h-full object-cover opacity-80"
-          referrerPolicy="no-referrer"
-        />
+     
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80" />
       </div>
 
-      <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-20 max-w-7xl mx-auto" id="hero-content">
+      <div className=" h-full flex flex-col justify-center px-6 md:px-20 max-w-7xl mx-auto absolute z-99 inset-0" id="hero-content ">
         <motion.div
            initial={{ opacity: 0, x: -50 }}
            whileInView={{ opacity: 1, x: 0 }}
@@ -31,7 +39,7 @@ export default function Hero() {
                 We help brands grow through strategic marketing, powerful storytelling, and data-driven campaigns that deliver measurable results.
               </p>
               <button 
-                className="px-8 py-3 bg-white text-black font-semibold rounded-md hover:bg-gray-100 transition-all text-sm uppercase tracking-wider"
+                className="px-8 py-3 bg-white text-black font-semibold rounded-md hover:bg-gray-100 transition-all text-sm uppercase tracking-wider cursor-pointer"
                 id="book-call-btn"
               >
                 Book a Call
@@ -40,6 +48,7 @@ export default function Hero() {
           </div>
         </motion.div>
       </div>
+   
     </section>
   );
 }
