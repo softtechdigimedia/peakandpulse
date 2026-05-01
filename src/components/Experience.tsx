@@ -5,7 +5,7 @@ export default function Experience() {
     <section className="relative h-[80vh] min-h-[500px] w-full bg-black overflow-hidden" id="experience-section">
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1510511233900-1982d92bd835?q=80&w=2070&auto=format&fit=crop" 
+          src="/mountain.jpg" 
           alt="Close up of hands with card"
           className="w-full h-full object-cover opacity-60"
           referrerPolicy="no-referrer"

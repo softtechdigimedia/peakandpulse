@@ -5,7 +5,7 @@ import Features from './components/Features';
 import Experience from './components/Experience';
 import BentoGrid from './components/BentoGrid';
 import Anatomy from './components/Anatomy';
-// import InfiniteMarquee from './components/InfiniteMarquee';
+import PerformanceFuture from './components/PerformanceFuture';
 import Footer from './components/Footer';
 import Info from './components/Info';
 import FooterRevealSection from './components/FooterRevealSection';
@@ -22,6 +22,7 @@ export default function App() {
            <BentoGrid />
                <Info />
         <Anatomy />
+           <PerformanceFuture />
           {/* <InfiniteMarquee /> */}
         <Experience />
         <ThankYou />
