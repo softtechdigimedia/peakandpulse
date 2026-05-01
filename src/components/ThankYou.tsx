@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { useState, MouseEvent } from 'react';
+import { useState, type MouseEvent } from 'react';
 
 export default function ThankYou() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
